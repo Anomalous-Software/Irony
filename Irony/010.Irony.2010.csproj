@@ -15,7 +15,6 @@
     <OldToolsVersion>3.5</OldToolsVersion>
     <UpgradeBackupLocation>
     </UpgradeBackupLocation>
-    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
     <SccProjectName>
     </SccProjectName>
     <SccLocalPath>
@@ -58,8 +57,6 @@
     <DebugType>pdbonly</DebugType>
     <Optimize>true</Optimize>
     <OutputPath>bin\Release\</OutputPath>
-    <DefineConstants>
-    </DefineConstants>
     <ErrorReport>prompt</ErrorReport>
     <WarningLevel>4</WarningLevel>
     <CodeAnalysisRuleSet>AllRules.ruleset</CodeAnalysisRuleSet>
@@ -107,7 +104,6 @@
     <Compile Include="Parsing\Terminals\ImpliedSymbolTerminal.cs" />
     <Compile Include="Parsing\Terminals\LineContinuationTerminal.cs" />
     <Compile Include="Parsing\Terminals\QuotedValueLiteral.cs" />
-    <Compile Include="Parsing\Terminals\RegexLiteral.cs" />
     <Compile Include="Parsing\Terminals\FreeTextLiteral.cs" />
     <Compile Include="Parsing\Terminals\WikiTerminals\WikiBlockTerminal.cs" />
     <Compile Include="Parsing\Terminals\WikiTerminals\WikiTagTerminal.cs" />
@@ -148,7 +144,6 @@
     <Compile Include="Parsing\Terminals\_Terminal.cs" />
     <Compile Include="Parsing\Scanner\Token.cs" />
     <Compile Include="Parsing\Scanner\Scanner.cs" />
-    <Compile Include="Parsing\Terminals\RegexBasedTerminal.cs" />
     <Compile Include="Parsing\Grammar\BnfTerm.cs" />
     <Compile Include="Parsing\Grammar\Grammar.cs" />
     <Compile Include="Parsing\Terminals\TerminalFactory.cs" />
@@ -160,6 +155,8 @@
       <DesignTime>True</DesignTime>
       <DependentUpon>Resources.resx</DependentUpon>
     </Compile>
+    <Compile Include="Parsing\Terminals\RegExBasedTerminal.cs" />
+    <Compile Include="Parsing\Terminals\RegExLiteral.cs" />
   </ItemGroup>
   <ItemGroup>
     <EmbeddedResource Include="Resources.resx">
